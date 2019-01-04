@@ -16,8 +16,15 @@ public class Employee {
     private String role;
 
     public Employee(){}
+
     public Employee(String name, String role) {
         this.name = name;
         this.role = role;
     }
+
+    @Override
+    public String toString() {
+        return "Employee[id:" + id + ", name:" + name + ", role:" + role + "]";
+    }
+
 }
